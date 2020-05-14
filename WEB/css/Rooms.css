@@ -1,0 +1,160 @@
+body {
+	background-color: #f2f2f2;
+}
+.slad_room  {
+	height: 410px;
+	background-image: url("../img/Rooms_inf.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.slad_room h1 {
+	font-family: 'Lora', serif;
+	font-size: 47px;
+	text-transform: uppercase;
+	color: white;
+}
+@media all and (max-width: 1178px) {
+    .slad_room  {
+        height: 260px;
+    }
+}
+@media all and (max-width: 784px) {
+	.slad_room h1 {
+		font-size: 36px;
+	}
+	
+}
+/*-------------------------------Карточки комнат------------------------------*/
+.wapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 45px 0;
+	border-bottom: 5px solid #bcbcbc;
+}
+.kol {
+	width: 396px;
+	min-height: 596px;
+	box-sizing: border-box;
+	margin-bottom: 46px;
+	background-color: white;
+	position: relative;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.kol:hover  {
+	box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.7);
+	transform: scale(1.04);
+	z-index: 1;
+}
+.kol:hover .cont_sulka {
+	bottom: 70px;
+}
+.kol:hover .kol_opisanie p {
+	opacity: 0.2;
+}
+.kol_name {
+	text-align: center;
+	min-height: 80px;
+	font-family: 'Lora', serif;
+	font-size: 36px;
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.kol_img img {
+	width: 100%;
+}
+.kol_mach {
+	padding: 0 30px;
+}
+.kol_mach h3{
+	text-align: center;
+	color: #5a477d;
+	font-size: 28px;
+	margin-top: 8px;
+}
+.kol_mach h3 + p{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.kol_mach .kol_opisanie {
+	border-top: 1px solid #c0c0c0;
+}
+.kol_mach .kol_opisanie p {
+	color: #c0c0c0;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 18px;
+	margin-bottom: 10px;
+}
+.cont_sulka {
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	margin-left: -47px;
+	transition: 0.5s;
+}
+.cont_sulka a {
+	text-decoration: none;
+	display: inline-block;
+	background-color: white;
+	border: 2px solid #5a477d;
+	color: #5a477d;
+	text-transform: uppercase;
+	border-radius: 4px;
+	padding: 10px 15px;
+	transition: 0.4s;
+}
+.cont_sulka a:hover {
+	background-color: #d9ecf1;
+}
+/*--------------------------------Нижние кнопки-------------------------------*/
+.list_events {
+    padding-top: 85px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+.list_events a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #bcbcbc;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin-right: 24px;
+    color: black;
+}
+.list_events a:last-child {
+    margin-right: 0;
+}
+.list_events a:hover, .list_events a:active, .list_events a:focus {
+    color: #5a477d;
+	background-color: #d9ecf1;
+}
+.list_events .but {
+    width: 120px;
+    border: none;
+    background-color: #5a477d;
+    font-size: 20px;
+    color: white;
+}
+.list_events .but:hover, .list_events .but:active, .list_events .but:focus {
+    background-color: #3f3257;
+    color: white;
+}
+@media all and (max-width: 1205px) {
+	.wapper {
+		justify-content: center;
+	}
+	.kol {
+		margin: 46px;
+	}
+}

@@ -1,0 +1,257 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.center {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*
+font-family: 'Lora', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/*-------------------------Шапка сайта------------------*/
+.hed {
+	background-color: aliceblue;
+	position: relative;
+	z-index: 1;
+}
+.hed-logo {
+	float: left;
+	margin-left: 3%;
+}
+.hed-logo img {
+	height: 50px;
+}
+.hed-main {
+	float: right;
+	margin: 0 4% 0 0;
+}
+.hed-main ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.hed-main a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 18px 15px;
+	display: block;
+}
+.hed-main a:hover {
+	color: #5a477d;
+	background-color: #d9ecf1;
+	transition-duration: 0.4s;
+}
+.hed-main li {
+	display: inline-block;
+	text-transform: uppercase;
+	list-style-type: none;
+}
+.navbar {
+	display: none;
+	width: 46px;
+	height: 46px;
+	background-color: #5a477d;
+	float: right;
+	border: 1px solid black;
+	border-radius: 6px;
+	padding: 12px 10px;
+	margin-top: 4px;
+	margin-right: 15px;
+}
+.navbar .icon_bar {
+	display: block;
+	height: 3px;
+	background-color: aliceblue;
+	margin-top: 4px;
+	border-radius: 1px;
+}
+.navbar .icon_bar:first-child {
+	margin-top: 0;
+}
+.navbar:hover {
+	background-color: #3f3257;
+}
+.navbar:active ~ .hed-main, .navbar:focus ~ .hed-main, .hed-main:hover {
+	display: block;
+	top: 54px;
+	transition-duration: 1s;
+}
+@media all and (max-width: 655px) {
+	.pusto {
+		background-color: aliceblue;
+		width: 138px;
+	}
+	.navbar {
+		display: block;
+	}
+	.hed-main {
+		box-sizing: border-box;
+		width: 100%;
+		display: block;
+		float: none;
+		position: absolute;
+		z-index: -1;
+		top: -290px;
+		background-color: aliceblue;
+		padding-left: 8px;
+	}
+
+	.hed-main a:hover {
+		padding-left: 30px;
+		transition-duration: 0.4s;
+	}
+	.hed-main li {
+		display: block;
+	}
+}
+
+
+/*------------------------Подвал сайта------------------*/
+.footer {
+	background-color: #282828;
+	min-height: 200px;
+}
+.footer-top {
+	min-height: 149px;
+	border-bottom: 1px solid #5a477d;
+}
+.footer-menu a {
+	text-decoration: none;
+	color: #535353;
+	font-weight: bold;
+	padding-left: 16px;
+	background: url("../img/Sprait_list1.png") no-repeat -122px -78px;
+}
+.footer-menu a:hover {
+	color: aliceblue;
+}
+.footer-menu li {
+	list-style-type: none;
+}
+.footer-bottom {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 12px;
+}
+.footer-bottom a {
+	color: #5a477d;
+	text-decoration: none;
+	padding-left: 15%;
+	font-size: 12px;
+}
+.footer-bottom a:first-child {
+	padding-left: 0;
+}
+.footer-bottom a:hover {
+	color: aliceblue;
+}
+.blok {
+	float: left;
+	width: 25%;
+	color: aliceblue;
+	margin-top: 20px;
+}
+.Certificate {
+	text-align: center;
+}
+.Certificate img {
+	width: 79px;
+	height: 53px;
+}
+.sotial a {
+	background: url("../img/Sprait_list1.png") no-repeat;
+	width: 30px;
+	height: 27px;
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+a.facebook {
+	background-position: -11px -2px;
+}
+a.twitter {
+	background-position: -58px -2px;
+}
+a.pinterest {
+	background-position: -110px -2px;
+}
+.mesengers p {
+	color: #535353;
+	margin-left: 3px;
+}
+.mesengers h3 {
+	font-family: 'Lora', serif;
+}
+.podpis p {
+	color: #535353;
+	font-weight: bold;
+}
+.podpis h3 {
+	font-family: 'Lora', serif;
+}
+.form-footer input[type=email] {
+	border: none;
+	font-size: 18px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: #646464;
+	width: 170px;
+}
+.form-footer input[type=email]:focus {
+	color: aliceblue;
+}
+.form-footer {
+	position: relative;
+}
+.form-footer button[type=submit] {
+	position: absolute;
+	top: 10px;
+	border: none;
+	width: 60px;
+	height: 30px;
+	background: url("../img/Sprait_list1.png") no-repeat -95px -41px;
+	background-color: #5a477d;
+}
+.form-footer button[type=submit]:hover {
+	background-color: #3f3257;
+}
+@media all and (max-width: 930px) {
+	.blok {
+		float: none;
+		width: 230px;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.footer-top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+	.footer-bottom {
+		display: none;
+	}
+}
+@media all and (max-width: 540px) {
+    .blok {
+        margin-left: 15px;
+    }
+    .footer-top {
+        justify-content: flex-start;
+    }
+}
+

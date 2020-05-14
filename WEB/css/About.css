@@ -1,0 +1,142 @@
+
+/*-----------------------------------О нас----------------------------------*/
+.o_nas_logo {
+    height: 411px;
+	background-image: url("../img/AboutInf.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.o_nas_logo h1 {
+    font-family: 'Lora', serif;
+	font-size: 47px;
+	color: white;
+    text-transform: uppercase;
+}
+@media all and (max-width: 1178px) {
+    .o_nas_logo {
+        height: 260px;
+    }
+}
+@media all and (max-width: 784px) {
+	.o_nas_logo h1 {
+		font-size: 36px;
+	}
+}
+/*-----------------------------Краткая информация---------------------------*/
+.crat_inf_conteiner {
+    border-bottom: 2px solid #bcbcbc;
+}
+.crat_inf {
+    margin: 0 10%;
+}
+.crat_inf h3 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #5a477d;
+    font-size: 25px;
+    font-family: 'Bad Script', cursive;
+}
+.crat_inf p {
+    text-align: center;
+    color: #5a477d;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.crat_inf_nav {
+    margin-top: 100px;
+    margin-bottom: -2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.crat_inf_nav a {
+    transition: 0.6s;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 5%;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.0);
+    font-size: 18px;
+    color: #5a477d;
+    text-align: center;
+}
+.crat_inf_nav a:hover, .crat_inf_nav a:focus, .crat_inf_nav a:active {
+    border-bottom: 4px solid #3f3257;
+    color: #3f3257;
+    transition: 0.0s;
+}
+@media all and (max-width: 784px) {
+    .crat_inf_nav {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .crat_inf_nav a {
+        margin: 0;
+    }
+    
+}
+/*--------------------------Краткая инф. с картинкой------------------------*/
+.crat_inf_img {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    transition: 0.6s;
+}
+.crat_inf_img img {
+    float: left;
+    margin: 0 35px 15px 5px;
+}
+.crat_inf_img p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #bcbcbc;
+}
+@media all and (max-width: 900px) {
+    .crat_inf_img {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        margin: 0 5px;
+    }
+    .crat_inf_img img {
+        float: none;
+        width: 100%;
+        margin: 10px 0 20px 0;
+    }
+}
+/*---------------------------------Видео о нас------------------------------*/
+@media all and (max-width: 900px) {
+    .video-container iframe {
+        height: 315px;
+    }
+}
+
+/*------------------------------Краткая история-----------------------------*/
+.crat_histor {
+    padding: 0 5px 50px 5px;
+}
+.crat_histor h2 {
+    font-family: 'Lora', serif;
+	font-size: 35px;
+	padding-top: 60px;
+    padding-bottom: 50px;
+	text-transform: uppercase;
+    text-align: center;
+}
+.crat_histor p {
+    color: #bcbcbc;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+@media all and (max-width: 900px) {
+   .crat_histor h2 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}

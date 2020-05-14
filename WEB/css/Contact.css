@@ -1,0 +1,168 @@
+
+.Contact_logo {
+    height: 411px;
+	background-image: url("../img/AboutInf.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.Contact_logo h1 {
+    font-family: 'Lora', serif;
+	font-size: 47px;
+	color: white;
+    text-transform: uppercase;
+}
+@media all and (max-width: 1178px) {
+    .Contact_logo {
+        height: 260px;
+    }
+}
+@media all and (max-width: 784px) {
+	.Contact_logo h1 {
+		font-size: 36px;
+	}
+}
+
+/*---------------------------------------------------------*/
+.Contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 40px;
+	margin-left: 10px;
+}
+.Contact .forms {
+	display: flex;
+	flex-wrap: wrap;
+}
+.forma {
+    box-sizing: border-box;
+	flex: 1 1 60%;
+}
+.form-contacts {
+    box-sizing: border-box;
+	flex: 1 1 40%;
+    margin-left: -4px;
+    vertical-align: top;
+}
+.forma .name_emal {
+    display: inline-block;
+    width: 50%;
+}
+.forma .tel_web {
+    width: 50%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.forma input {
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    padding-left: 10px;
+	text-transform: capitalize;
+    
+}
+.inp {
+    padding: 10px;
+}
+.forma .tex {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+.forma textarea {
+    width: 100%;
+    height: 133px;
+    font-size: 18px;
+    padding-left: 10px;
+    box-sizing: border-box;
+	background-color: #f9f9f9;
+	border: none;
+	resize: none;
+}
+.forma button {
+	background: url('../img/Sprait_list1.png') no-repeat right -421px;
+    background-color: #5a477d;
+	
+	border: none;
+	color: white;
+	width: 235px;
+	height: 42px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+	margin-left: 10px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+}
+.forma button:hover {
+	background-color: #3f3257;
+}
+.form-contacts ul {
+	padding: 0;
+	margin: 0;
+}
+.form-contacts li {
+	list-style-type: none;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-bottom: 40px;
+	height: 40px;
+}
+.form-contacts .name_org {
+	background-image: url(../img/Sprait_list1.png);
+	background-repeat: no-repeat;
+	background-position: -98px -112px;
+}
+.form-contacts .tel_org {
+	background-image: url(../img/Sprait_list1.png);
+	background-repeat: no-repeat;
+	background-position: -98px -172px;
+}
+.form-contacts .web_org {
+	background-image: url(../img/Sprait_list1.png);
+	background-repeat: no-repeat;
+	background-position: -98px -320px;
+}
+.form-contacts a {
+	display: block;
+	font-size: 20px;
+	margin-left: 60px;
+	padding-left: 25px;
+	text-decoration: none;
+	color: #cbcbcb;
+	line-height: 40px;
+	border-left: 1px solid #cbcbcb;
+}
+@media all and (max-width: 784px) {
+	.Contact .forms {
+		flex-direction: column;
+	}
+	.forma .name_emal {
+		display: block;
+		width: 100%;
+	}
+	.forma .tel_web {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	.forma button {
+    	margin-bottom: 50px;
+	}
+	.form-contacts li {
+		margin-left: 15px;
+	}
+	.Contact h2 {
+		text-align: center;
+		margin-left: 0;
+	}
+}

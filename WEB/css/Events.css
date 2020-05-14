@@ -1,0 +1,186 @@
+.events_logo {
+    height: 411px;
+	background-image: url("../img/EventsInf.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
+.events_logo h1 {
+    font-family: 'Lora', serif;
+	font-size: 47px;
+	color: white;
+    text-transform: uppercase;
+}
+@media all and (max-width: 1178px) {
+    .events_logo {
+        height: 260px;
+    }
+}
+@media all and (max-width: 784px) {
+	.events_logo h1 {
+		font-size: 36px;
+	}
+}
+
+/*------------------------------Дата ивента-----------------------------------*/
+.upcomming_events {
+    text-align: center;
+    border-bottom: 2px solid #bcbcbc;
+}
+.upcomming_events h2 {
+    font-family: 'Lora', serif;
+	font-size: 35px;
+	padding-top: 70px;
+    padding-bottom: 50px;
+	text-transform: capitalize;
+}
+.upcomming_events form {
+	margin-bottom: 40px;
+}
+.upcomming_events .event_input {
+	box-sizing: border-box;
+	display: inline-block;
+	margin-right: 4%;
+}
+.upcomming_events input[type=text] {
+	background: url('../img/Sprait_list1.png') no-repeat right -368px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    padding: 0;
+	border: 2px solid #cacaca;
+	box-sizing: border-box;
+}
+.upcomming_events button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #5a477d;
+    color: white;
+    font-size: 18px;
+}
+.upcomming_events button:hover {
+	background-color: #3f3257;
+}
+@media all and (max-width: 784px) {
+	.upcomming_events .event_form {
+		padding: 0 5px 0 5px;
+	}
+	.upcomming_events .event_input {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.upcomming_events input[type=text] {
+		width: 100%;
+		
+	}
+	.upcomming_events button {
+		width: 100%;
+	}
+}
+/*--------------------------------Ивенты--------------------------------------*/
+.conteinet_events .event {
+	display: flex;
+	flex-wrap: nowrap;
+    padding: 45px 0;
+    border-bottom: 2px solid #bcbcbc;
+}
+.conteinet_events .event_img {
+	flex: 1 1 auto;
+}
+.conteinet_events .event_info {
+	flex: 1 1 auto;
+	padding-left: 40px;
+	position: relative;
+}
+.conteinet_events h3 {
+    font-family: 'Lora', serif;
+	font-size: 35px;
+	text-transform: capitalize;
+    padding-bottom: 35px;
+}
+.conteinet_events h3 + p {
+    font-size: 14px;
+	margin-bottom: 90px;
+	color: #404040;
+}
+.conteinet_events .event_add {
+	font-size: 23px;
+	position: absolute;
+	left: 40px;
+	bottom: 0;
+	color: #404040;
+}
+.event_add_clock  {
+	display: inline-block;
+	margin-right: 50px;
+	
+}
+.event_add_plus {
+	display: inline-block;
+}
+.event_add_plus a {
+	text-decoration: none;
+	color: #404040;
+}
+.event_add i {
+	margin-right: 6px;
+}
+@media all and (max-width: 784px) {
+	.conteinet_events .event {
+		flex-direction: column;
+	}
+	.conteinet_events .event_img img {
+		width: 100%;
+	}
+	.conteinet_events .event_img {
+		padding: 0 5px;
+	}
+	.conteinet_events .event_info {
+		padding: 0 5px;
+	}
+	.conteinet_events .event_add {
+		left: 5px;
+	}
+	.conteinet_events h3 {
+		text-align: center;
+	}
+}
+/*--------------------------------Нижние кнопки-------------------------------*/
+.list_events {
+    padding-top: 85px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+.list_events a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #bcbcbc;
+    font-size: 20px;
+    padding: 15px 10px;
+    margin-right: 24px;
+    color: black;
+}
+.list_events a:last-child {
+    margin-right: 0;
+}
+.list_events a:hover, .list_events a:active, .list_events a:focus {
+    color: #5a477d;
+	background-color: #d9ecf1;
+}
+.list_events .but {
+    width: 120px;
+    border: none;
+    background-color: #5a477d;
+    font-size: 20px;
+    color: white;
+}
+.list_events .but:hover, .list_events .but:active, .list_events .but:focus {
+    background-color: #3f3257;
+    color: white;
+}

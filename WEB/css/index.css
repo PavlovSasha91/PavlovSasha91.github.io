@@ -1,0 +1,358 @@
+/*---------------------Слайдер шапки сайта--------------*/
+.slauder {
+	height: 650px;
+	background-image: url("../img/prew.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: 0.5s;
+}
+.zag h1 {
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.zag h2 {
+	color: white;
+	text-align: center;
+}
+.zag {
+	padding-top: 130px;
+}
+
+@media all and (max-width: 1178px) {
+	.slauder {
+		height: 260px;
+	}
+	.zag {
+		padding-top: 50px;
+	}
+}
+
+/*----------------------Содержимое сайта----------------*/
+.dr-pos {
+	height: 50px;
+	position: relative;
+}
+.bronirovanie {
+	background-color: #ffffff;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	margin-left: -45%;
+	width: 90%;
+	height: 300px;
+	box-shadow: 0 0 1em 0.3em rgba(122, 122, 122, 0.5);
+}
+.forma_broni {
+	text-align: center;
+}
+.bronirovanie h2 {
+	font-family: 'Lora', serif;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 40px;
+	text-transform: uppercase;
+}
+.bronirovanie p {
+	font-size: 16px;
+	color: #808080;
+	text-align: center;
+	padding: 30px 0 30px 0;
+}
+.bronirovanie input[type=text],
+.bronirovanie input[type=date] {
+	border: solid #5a477d;
+	width: 180px;
+	height: 60px;
+	margin-left: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	padding: 0 15px 0 15px;
+	margin-bottom: 20px;
+	background: url("../img/Sprait_list1.png") no-repeat;
+}
+.bronirovanie input[type=text] {
+	margin-left: 0;
+	background-position: right -216px;
+}
+.bronirovanie input[type=date] {
+	background-position: right -266px ;
+}
+.forma_broni input[type=submit] {
+	background-color: #5a477d;
+	border: none;
+	color: white;
+	width: 250px;
+	height: 66px;
+	margin-left: 25px;
+	font-size: 20px;
+}
+.forma_broni input[type=submit]:hover,
+.forma_broni input[type=submit]:focus,
+.forma_broni input[type=submit]:active {
+	background-color: #3f3257;
+}
+.info {
+	text-align: center;
+	padding: 20px 0;
+}
+.info h2 {
+	font-family: 'Lora', serif;
+	font-size: 35px;
+	padding-top: 256px;
+	text-transform: uppercase;
+}
+.info p {
+	color: #808080;
+	padding-top: 37px;
+}
+@media all and (max-width: 1059px){
+	.forma_broni input[type=submit] {
+		margin-left: 0;
+	}
+	.forma_broni input[type=submit] {
+		width: 280px;
+	}
+}
+@media all and (max-width: 1178px) {
+	.bronirovanie {
+		position: static;
+		width: 100%;
+		box-shadow: none;
+		margin-left: 0;
+		display: block;
+		height: auto;
+	}
+	.bronirovanie h2 {
+		padding-top: 1px;
+	}
+	.bronirovanie p {
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.bronirovanie input[type=text], .bronirovanie input[type=date] {
+		width: 180px;
+	}
+	.info h2 {
+		padding-top: 0px;
+	}
+	.dr-pos {
+		position: static;
+		height: auto;
+	}
+	
+}
+@media all and (max-width: 784px) {
+	.bronirovanie input[type=text], .bronirovanie input[type=date] {
+		box-sizing: border-box;
+		width: 80%;
+		margin-left: 0;
+		padding: 0 20px 0 20px;
+	}
+	.forma_broni input[type=submit] {
+		width: 80%;
+	}
+	.forma_broni {
+		box-sizing: border-box;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.bronirovanie h2 {
+		font-size: 30px;
+	}
+	.info h2 {
+		font-size: 30px;
+	}
+	.info p {
+		
+	padding-top: 17px;
+	}
+}
+
+/*-----------------------Октивный отдых-----------------*/
+.activiti h2 {
+	font-family: 'Lora', serif;
+	font-size: 35px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.activiti p {
+	padding-top: 30px;
+	color: #808080;
+	font-size: 16px;
+	text-align: center;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card {
+	position: relative;
+	width: 380px;
+	height: 580px;
+	margin: 50px 3px;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+}
+.card .content {
+	position: absolute;
+	bottom: -253px;
+	left: 15px;
+	color:  white;
+	transition: 1s;
+}
+.card .content h2 {
+	font-size: 35px;
+	text-align: left;
+}
+.card .content p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	padding-top: 0;
+	color:  white;
+}
+.card .content a {
+	text-decoration: none;
+	color: white;
+}
+.card:hover {
+	box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.7);
+}
+.card:hover .imgBox {
+	transition: 1s;
+	-webkit-filter: brightness(0.4) grayscale(1);
+}
+.card:hover .content {
+	bottom: 20px;
+}
+@media all and (max-width: 1178px) {
+	.container {
+		justify-content: center;
+	}
+	.card {
+		margin: 25px auto;
+	}
+}
+
+/*------------------------Комнаты info------------------*/
+.room_info {
+	min-height: 640px;
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.img-room1 {
+	flex-basis: 40%;
+	background-image: url("../img/pexels-photo-129062.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+.img-room2 {
+	flex-basis: 30%;
+	background-image: url("../img/pexels-photo.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+.opesonie-room {
+	flex: 1 0 540px;
+	position: relative;
+}
+.radioKnopki {
+	padding: 20px 10%;
+}
+.room_opis {
+	padding: 20px 10%;
+}
+.room_opis h2 {
+	font-family: 'Lora', serif;
+	font-size: 35px;
+}
+.room_opis p {
+	padding-top: 40px;
+	margin-bottom: 120px;
+}
+.room_opis a {
+	font-family: 'Lora', serif;
+	font-size: 1.5em;
+	position: absolute;
+	bottom: 40px;
+	left: 10%;
+	text-decoration: none;
+	color: white;
+	background-color: #5a477d;
+	padding: 15px 90px 15px 20px;
+}
+.room_opis a:hover {
+	background-color: #3f3257;
+}
+.radioKnopki .radio_check {
+	margin-bottom: 10px;
+	margin-right: 5px;
+	display: inline-block;
+	position: relative;
+}
+.radioKnopki input[type="radio"] {
+			display: none;
+}
+.radioKnopki label {
+	padding-left: 23px;
+}
+.radioKnopki label::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	border: 2px solid #5a477d;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.radioKnopki input[type="radio"]:checked + label::before {
+	background-color: #5a477d;
+}
+@media all and (max-width: 1178px) {
+	.img-room2 {
+		display: none;
+	}
+	.img-room1 {
+		flex-basis: 60%;
+	}
+}
+@media all and (max-width: 784px) {
+	.img-room1 {
+		display: none;
+	}
+	.opesonie-room {
+		flex-basis: 100%;
+		border-top: 2px solid #5a477d;
+		border-bottom: 2px solid #5a477d;
+	}
+	.room_info {
+		min-height: 440px;
+		margin-top: 0;
+	}
+	.room_opis {
+		padding: 5px 8%;
+	}
+	.radioKnopki {
+		padding: 5px 8%;
+	}
+	.room_opis a {
+		left: 8%;
+	}
+}
+@media all and (max-width: 540px) {
+	.radioKnopki .radio_check {
+		display: block;
+	}
+}
